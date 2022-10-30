@@ -5,6 +5,10 @@
 	margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.2;
@@ -12,14 +16,13 @@ body {
 	color: #fff;
 	max-width: 1300px;
 	margin: 20px auto;
-	scroll-behavior: smooth;
 }
 
 header {
 	height: 100vh;
-	display: flex;
-	justify-content: center;
+	line-height: 1.7;
 	align-items: center;
+	display: flex;
 }
 
 header .header-content h1 {
@@ -44,9 +47,56 @@ a {
 
 /* Works */
 
+#works {
+	padding: 10px 0;
+	height: 100vh;
+}
+
 #works .caption-lg {
-	margin-top: 10px;
-	margin-bottom: 15px;
-	font-size: 25px;
+	margin-bottom: 20px;
+	font-size: 40px;
 	font-weight: 300;
+}
+
+.works-content .works-items {
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.works-content .works-items .works-items-info .works-title {
+	font-size: 25px;
+}
+
+.works-content .works-items .works-items-info {
+	opacity: 0.5;
+}
+
+.works-content .works-items img {
+	display: none;
+}
+
+.works-content .works-items .works-items-info .works-links a:hover {
+	opacity: 0.5;
+}
+
+.works-content .works-items .works-items-info .works-techs {
+	font-style: italic;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.works-content .works-items .works-items-info:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.works-content .works-items:hover img {
+	display: block;
+	height: 100px;
+	margin-top: -50px;
+	width: 200px;
+	margin-right: 200px;
+	opacity: 0.7;
 }
