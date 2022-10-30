@@ -14,7 +14,7 @@ body {
 	line-height: 1.2;
 	background-color: #000;
 	color: #fff;
-	max-width: 1300px;
+	max-width: 1200px;
 	margin: 20px auto;
 }
 
@@ -52,7 +52,7 @@ a {
 	height: 100vh;
 }
 
-#works .caption-lg {
+.caption-lg {
 	margin-bottom: 20px;
 	font-size: 40px;
 	font-weight: 300;
@@ -99,4 +99,54 @@ a {
 	width: 200px;
 	margin-right: 200px;
 	opacity: 0.7;
+}
+
+/* Skills */
+
+#skills {
+	height: 100vh;
+}
+
+#skills .skills-content {
+	opacity: 0.5;
+}
+
+#skills .skills-content p {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+/* media query */
+
+@media (max-width: 480px) {
+	header {
+		line-height: 1;
+
+		font-size: 16px;
+		padding: 20px;
+	}
+
+	header .header-content h1 {
+		text-align: left;
+	}
+
+	header .header-content .light-header {
+		display: none;
+	}
+
+	#works {
+		padding: 20px;
+		margin-bottom: 200px;
+	}
+
+	.works-content .works-items:hover img {
+		display: none;
+	}
+
+	#skills {
+		padding: 20px;
+		margin-bottom: 200px;
+	}
 }
