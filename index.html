@@ -4,184 +4,532 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="keywords"
-			content="website, web developer portfolio, front-end developer, react developer, web developer projects"
-		/>
-		<meta name="publisher" content="Noven Latigo" />
-		<meta name="copyright" content="Noven Latigo" />
-
-		<meta name="audience" content="Everyone" />
-
-		<meta property="og:title" content="Front-end Web Developer | Noven Latigo Portfolio" />
-		<meta property="og:type" content="portfolio website" />
-		<meta property="og:description" content="Front end web developer portfolio" />
-		<meta property="og:image" content="./assets/myportfolio.png" />
-		<meta property="og:url" content="https://novenl.tech/" />
-		<meta property="twitter:card" content="summary_large_image" />
-
 		<link
-			rel="shortcut icon"
-			href="https://mir-s3-cdn-cf.behance.net/user/230/c3b5d2102612843.6241160f0cbfd.png"
-			type="image/x-icon"
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="styles.css" />
-		<title>Front-end Web Developer | Noven Latigo Portfolio</title>
+		<link rel="stylesheet" href="styles/color-1.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<!-- Style Switcher -->
+		<link
+			rel="stylesheet"
+			href="styles/color-1.css"
+			class="alternate-style"
+			title="color-1"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/color-2.css"
+			class="alternate-style"
+			title="color-2"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/color-3.css"
+			class="alternate-style"
+			title="color-3"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/color-4.css"
+			class="alternate-style"
+			title="color-4"
+			disabled
+		/>
+		<link
+			rel="stylesheet"
+			href="styles/color-5.css"
+			class="alternate-style"
+			title="color-5"
+			disabled
+		/>
+		<link rel="stylesheet" href="styles/style-switcher.css" />
+		<title>Document</title>
 	</head>
 	<body>
-		<header id="header">
-			<div class="header-content">
-				<h1>
-					Hi, I'm Noven. I am a Web developer based in Quezon City, Philippines. <br />
-					<span class="light-header"
-						>I enjoy Developing and learning about websites, web applications, and other
-						technologies. I specialize in building mobile responsive front-end UI applications that
-						connect with API and other backend technologies. I’m passionate about learning new
-						technologies and understand there is more than one way to accomplish a task. Though I am
-						most proficient in building front-end applications using HTML, CSS, Javascript, and
-						React.</span
-					>
-					<span class="header-links">
-						<a class="goto" href="#works">View Works </a> /
-						<a class="goto" href="#contact"> Contact </a>/
-						<a class="goto" href="#skills">Skills</a>
-					</span>
-				</h1>
+		<!-- Main Container Start -->
+		<div class="main-container">
+			<!-- Aside Start -->
+			<div class="aside">
+				<div class="logo">
+					<a href="#"><span>N</span>oven</a>
+				</div>
+				<div class="nav-toggle">
+					<span> </span>
+				</div>
+				<ul class="nav">
+					<li>
+						<a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+					</li>
+					<li>
+						<a href="#about"><i class="fa fa-user"></i>About</a>
+					</li>
+					<li>
+						<a href="#services"><i class="fa fa-list"></i>Services</a>
+					</li>
+					<li>
+						<a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+					</li>
+					<li>
+						<a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+					</li>
+				</ul>
 			</div>
-		</header>
-		<section id="works">
-			<h2 class="light-header">Selected Projects</h2>
-			<p class="caption-lg">The projects that I built while learning web development.</p>
-			<div class="works-content">
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">Tastebite | Recipe App</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/tastebite" target="_blank">View Code</a> /
-							<a href="https://tastebite-goods.netlify.app/" target="_blank">View Live</a>
-						</div>
-						<div class="works-techs">
-							Technologies Used: React / React Router/ CSS / Spoonacular API
-						</div>
-					</div>
-
-					<img src="./assets/recipe-img.png" alt="recipe-img" />
-				</div>
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">Vibenmusic | Music App</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/viben-music-app" target="_blank">View Code</a> /
-							<a href="https://viben-music.netlify.app/" target="_blank">View Live</a>
-						</div>
-						<div class="works-techs">
-							Technologies Used: React / React Router/ Tailwind CSS / Vite JS / ShazamCore API /
-							Redux
+			<!-- Aside End -->
+			<!-- Main Content Start -->
+			<div class="main-content">
+				<!-- Home Section Start -->
+				<section class="home active section" id="home">
+					<div class="container">
+						<div class="row">
+							<div class="home-info padd-15">
+								<h3 class="hello">Hello, my name is <span class="name"> Noven Latigo</span></h3>
+								<h3 class="my-profession">I'm a <span class="typing">web developer</span></h3>
+								<p>
+									Hi, I'm Noven. I am a Front-end developer based in Quezon City, Philippines. I
+									enjoy Developing and learning about websites, web applications, and other
+									technologies.
+								</p>
+								<a href="#" class="btn">Download CV</a>
+							</div>
+							<div class="home-img padd-15">
+								<img src="assets/hero.jpg" alt="hero-img" />
+							</div>
 						</div>
 					</div>
+				</section>
 
-					<img src="./assets/music-img.png" alt="music-img" />
-				</div>
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">Obscrypto | Crypto App</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/crypt-project" target="_blank">View Code</a>
-							<a href="https://obs-crypto.web.app/" target="_blank">View Live</a>
+				<!-- Home Section End -->
+				<!-- About Section Start -->
+				<section class="about section" id="about">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>About Me</h2>
+							</div>
 						</div>
-						<div class="works-techs">
-							Technologies Used: React / React Router/ Tailwind CSS / Firebase / CoinGecko API /
-							Context API
+						<div class="row">
+							<div class="about-content padd-15">
+								<div class="row">
+									<div class="about-text padd-15">
+										<h3>I'm Noven Latigo and <span>Web Developer</span></h3>
+										<p>
+											I specialize in building mobile responsive front-end UI applications that
+											connect with API and other backend technologies. I’m passionate about learning
+											new technologies and understand there is more than one way to accomplish a
+											task. Though I am most proficient in building front-end applications using
+											HTML, CSS, Javascript, and React.
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="personal-info padd-15">
+										<div class="row">
+											<div class="info-item padd-15">
+												<p>Website : <span>novenl.tech/</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>Github : <span>github.com/noven21</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>LinkedIn : <span>in/novenlatigo</span></p>
+											</div>
+
+											<div class="info-item padd-15">
+												<p>Email : <span>novenlatigo@gmail.com</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>Education : <span>BS-Information Systems</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>Phone : <span>+63 9213704450</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>City : <span>Quezon City</span></p>
+											</div>
+											<div class="info-item padd-15">
+												<p>Freelance : <span>Available</span></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="buttons padd-15">
+												<a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+											</div>
+										</div>
+									</div>
+									<div class="skills padd-15">
+										<div class="row">
+											<div class="skills-row-items">
+												<div>
+													<div class="skill-item padd-15">
+														<h5>JS</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>React JS</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>TypeScript</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>HTML</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>CSS</h5>
+													</div>
+												</div>
+												<div>
+													<div class="skill-item padd-15">
+														<h5>Tailwind CSS</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>Node JS</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>MongoDB</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>Sass/SCSS</h5>
+													</div>
+													<div class="skill-item padd-15">
+														<h5>Wordpress</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="education padd-15">
+										<h3 class="title">Education</h3>
+										<div class="row">
+											<div class="timeline-box padd-15">
+												<div class="timeline shadow-dark">
+													<!-- timeline item -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i>
+															2020
+														</h3>
+														<h4 class="timeline-title">
+															Bachelor of Science in Information Systems
+														</h4>
+														<p class="timeline-text">New Era University</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="experience padd-15">
+										<h3 class="title">Experience</h3>
+										<div class="row">
+											<div class="timeline-box padd-15">
+												<div class="timeline shadow-dark">
+													<!-- timeline item -->
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i>
+															2018 - Present
+														</h3>
+														<h4 class="timeline-title">Freelance Web Developer</h4>
+														<p class="timeline-text">
+															Developing a website for individual clients and small business.
+															helping to grow of their businesses by creating websites.
+														</p>
+													</div>
+
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i>
+															2019 - 2020 - NEURS Capstone Project
+														</h3>
+														<h4 class="timeline-title">Front-end Web Developer</h4>
+														<p class="timeline-text">
+															Developed a Reservation Web Application for NEU Multimedia Rooms that
+															can perform Reservation features for Rooms and Items, this Web
+															Application will be used by approximately 30,000 plus students and
+															Faculty members of NEU.
+														</p>
+													</div>
+
+													<div class="timeline-item">
+														<div class="circle-dot"></div>
+														<h3 class="timeline-date">
+															<i class="fa fa-calendar"></i>
+															2020 - Maynilad Water Services INC.
+														</h3>
+														<h4 class="timeline-title">Supply Chain Management Intern</h4>
+														<p class="timeline-text">
+															Managing the over 100,00 mishandled clients contract via Scanning the
+															information and Create a Row Table to put the Contracts to the right
+															places.
+														</p>
+														<p class="timeline-text">
+															Updating the client's information of the existing and new clients by
+															using the Supply Management Software.
+														</p>
+														<p class="timeline-text">
+															Collaborate with other interns and supervisors to make plans and to
+															make work fast to save working hours.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+				</section>
 
-					<img src="./assets/crypto-img.png" alt="crypto-img" />
-				</div>
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">NEURS | Capstone Project</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/neurs" target="_blank">View Code</a> /
-							<a href="https://streamable.com/jzufgd" target="_blank">View Demo</a>
+				<!-- About Section End -->
+				<!-- Services Section Start -->
+				<services class="service section" id="services">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Services</h2>
+							</div>
 						</div>
-						<div class="works-techs">
-							Technologies Used: Codeigniter / PHP / jQuery / FullCalendar API/ Javascript / SQL /
-							Boostrap / CSS
+						<div class="row">
+							<!-- Service Item Start -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<f class="fa fa-mobile-alt"></f>
+									</div>
+									<h4>Web Design</h4>
+									<p>Creating and Designing a Website using CMS Tools and Figma</p>
+								</div>
+							</div>
+							<!-- Service Item End -->
+							<!-- Service Item Start -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<f class="fa fa-laptop-code"></f>
+									</div>
+									<h4>Web Development</h4>
+									<p>Developing a Website by coding using HTML,CSS,JavaScript and React.</p>
+								</div>
+							</div>
+							<!-- Service Item End -->
+							<!-- Service Item Start -->
+							<div class="service-item padd-15">
+								<div class="service-item-inner">
+									<div class="icon">
+										<f class="fa fa-palette"></f>
+									</div>
+									<h4>Graphic Design</h4>
+									<p>Creating Graphic Design for your brand growth.</p>
+								</div>
+							</div>
+							<!-- Service Item End -->
 						</div>
 					</div>
+				</services>
 
-					<img src="./assets/neurs-img.png" alt="neu-img" />
-				</div>
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">Animepub | SOCMED App</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/Animepub" target="_blank">View Code</a> /
-							<a href="https://animepub.netlify.app/posts" target="_blank">View Live</a>
+				<!-- Services Section End -->
+				<!-- Portfolio Section Start -->
+				<section class="portfolio section" id="portfolio">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Portfolio</h2>
+							</div>
 						</div>
-						<div class="works-techs">
-							Technologies Used: React / React Router / Node.js / Express / MongoDB / Redux /
-							Firebase Auth / Material UI Javascript / SQL / Boostrap / CSS Redux
+						<div class="row">
+							<div class="portfolio-heading padd-15">
+								<h2>My Last Projects:</h2>
+							</div>
+						</div>
+						<div class="row">
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/crypto-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/pig-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/recipe-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/neurs-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/gericht-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
+							<!-- portfolio item start -->
+							<div class="portfolio-item padd-15">
+								<div class="portfolio-item-inner shadow-dark">
+									<div class="portfolio-img">
+										<img src="assets/music-img.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<!-- portfolio item end -->
 						</div>
 					</div>
-
-					<img src="./assets/animepub-img.png" alt="neu-img" />
-				</div>
-				<div class="works-items">
-					<div class="works-items-info">
-						<h3 class="works-title">Gericht | Restaurant Website</h3>
-
-						<div class="works-links">
-							<a href="https://github.com/noven21/restaurantReact" target="_blank">View Code</a> /
-							<a href="https://gerichtresto.netlify.app/" target="_blank">View Live</a>
+				</section>
+				<!-- Portfolio Section End -->
+				<!-- Contact Section Start -->
+				<section class="contact section" id="contact">
+					<div class="container">
+						<div class="row">
+							<div class="section-title padd-15">
+								<h2>Contact Me</h2>
+							</div>
 						</div>
-						<div class="works-techs">
-							Technologies Used: React / React Router / CSS / React Icons
+						<h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+						<h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+						<div class="row">
+							<!-- Contact info item start -->
+							<div class="contact-info-item padd-15">
+								<div class="icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<h4>Call Us on</h4>
+								<p>+63 9213704450</p>
+							</div>
+							<!-- Contact info item end -->
+							<!-- Contact info item start -->
+							<div class="contact-info-item padd-15">
+								<div class="icon">
+									<i class="fa fa-map-marker-alt"></i>
+								</div>
+								<h4>Location</h4>
+								<p>Quezon City, Philippines</p>
+							</div>
+							<!-- Contact info item end -->
+							<!-- Contact info item start -->
+							<div class="contact-info-item padd-15">
+								<div class="icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<h4>Email</h4>
+								<p>novenlatigo@gmail.com</p>
+							</div>
+
+							<!-- Contact info item end -->
+							<!-- Contact info item start -->
+							<div class="contact-info-item padd-15">
+								<div class="icon">
+									<i class="fa fa-globe-europe"></i>
+								</div>
+								<h4>Website</h4>
+								<p>https://novenl.tech/</p>
+							</div>
+
+							<!-- Contact info item end -->
+						</div>
+						<h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+						<h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+						<!-- Contact Form -->
+						<div class="row">
+							<div class="contact-form padd-15">
+								<div class="row">
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name" />
+										</div>
+									</div>
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="Email" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<button type="submit" class="btn">Send Message</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<img src="./assets/gericht-img.png" alt="gericht-img" />
-				</div>
+				</section>
+				<!-- Contact Section End -->
 			</div>
-			<p><a class="goto" href="#header">Go to Top ^ </a></p>
-		</section>
+			<!-- Main Content End -->
+		</div>
 
-		<section id="skills">
-			<h2 class="light-header">My Skills</h2>
-			<p class="caption-lg">
-				Skills that I had and every day I practice to improve and learn other stuff.
-			</p>
-			<div class="skills-content">
-				<p>Programming Languages: JavaScript / TypeScript</p>
-				<p>
-					Web Technologies & Databases: HTML / CSS / Sass/SCSS / Firebase / MongoDB / PostgreSQL
-				</p>
-				<p>
-					Frameworks & Libraries: React / Redux / React Router / Tailwind CSS / Node js / Express /
-				</p>
-			</div>
-			<p><a class="goto" href="#header">Go to Top ^ </a></p>
-		</section>
+		<!-- Main Container End -->
 
-		<section id="contact">
-			<h2 class="light-header">Connect with me</h2>
-			<p class="caption-lg">
-				Interested to work with me? you can Contact me with this informations. I'm available for
-				full-time, part-time and freelance Web developer position.
-			</p>
-			<div class="contact-content">
-				<p><a href="mailto:novenlatigo@gmail.com">Email</a>: novenlatigo@gmail.com</p>
-				<p><a href="https://github.com/noven21" target="_blank">Github</a></p>
-				<p><a href="https://www.linkedin.com/in/novenlatigo/" target="_blank">LinkedIn </a></p>
-				<p>Phone number: +63 9213704450</p>
-				<p><a href="" download>Download My CV </a></p>
+		<!-- Style Switcher Start -->
+		<div class="style-switcher">
+			<div class="style-switcher-toggler s-icon">
+				<i class="fas fa-cog fa-spin"></i>
 			</div>
-			<p><a class="goto" href="#header">Go to Top ^ </a></p>
-		</section>
+			<div class="day-night s-icon">
+				<i class="fas"></i>
+			</div>
+			<h4>Theme Colors</h4>
+			<div class="colors">
+				<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+				<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+				<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+				<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+				<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+			</div>
+		</div>
+		<!-- Style Switcher End -->
+
+		<!-- JS Files -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="js/script.js"></script>
+		<script src="js/styleSwitcher.js"></script>
 	</body>
 </html>
