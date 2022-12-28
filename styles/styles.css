@@ -434,6 +434,10 @@ h3.my-profession {
 	display: inline-block;
 }
 
+.about .about-content .personal-info .info-item p span a {
+	color: #ffffff;
+}
+
 .about .about-content .personal-info .buttons {
 	margin-top: 30px;
 }
@@ -672,6 +676,36 @@ h3.my-profession {
 	width: 100%;
 	display: block;
 }
+
+.portfolio .portfolio-item-inner .portfolio-text {
+	color: var(--text-black-900);
+}
+
+.portfolio .portfolio-item-inner .portfolio-text h2,
+p {
+	margin: 10px 0;
+}
+
+.portfolio .portfolio-item-inner .portfolio-text p {
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-text .portfolio-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-around;
+	margin: 10px 0;
+}
+
+.portfolio .portfolio-item-inner .portfolio-text .portfolio-btn button {
+	cursor: pointer;
+}
+
+/* .portfolio .portfolio-item-inner .portfolio-text .portfolio-btn button a {
+	color: var(--text-black-900);
+} */
 
 /* contact */
 .contact-title {
