@@ -669,7 +669,7 @@ h3.my-profession {
 	border: 6px solid var(--bg-black-100);
 	border-radius: 10px;
 	overflow: hidden;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
@@ -699,8 +699,9 @@ p {
 	margin: 10px 0;
 }
 
-.portfolio .portfolio-item-inner .portfolio-text .portfolio-btn button {
+.portfolio .portfolio-item-inner .portfolio-text .portfolio-btn .btn {
 	cursor: pointer;
+	padding: 10px 20px;
 }
 
 /* .portfolio .portfolio-item-inner .portfolio-text .portfolio-btn button a {
@@ -856,5 +857,9 @@ p {
 	.about .about-content .personal-info {
 		flex: 0 0 100%;
 		max-width: 100%;
+	}
+	.portfolio .portfolio-item-inner .portfolio-text .portfolio-btn {
+		flex-direction: column;
+		align-items: center;
 	}
 }
